@@ -29,7 +29,7 @@ Part of the [Learning Path](https://www.frontendmentor.io/learning-paths) on Fro
 
 ## 🔗 Live Preview
 
-[![Live Preview](https://img.shields.io/badge/Demo-Live-00BCD4?style=for-the-badge)](https://amansgz.github.io/recipe=page)
+[![Live Preview](https://img.shields.io/badge/Demo-Live-00BCD4?style=for-the-badge)](https://amansgz.github.io/recipe-page)
 
 ## 📚 What I Learned
 
