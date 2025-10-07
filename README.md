@@ -95,7 +95,7 @@ Part of the [Learning Path](https://www.frontendmentor.io/learning-paths) on Fro
 ```css
 .list li::before {
   content: ".";
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 2vw + 0.5rem, 2rem);
   position: absolute;
   inset-inline-start: 0;
   inset-block-start: -20px;
@@ -119,8 +119,8 @@ Part of the [Learning Path](https://www.frontendmentor.io/learning-paths) on Fro
 }
 .list--instructions li {
   counter-increment: orderedList;
-  margin-block-end: 10px;
-  padding-inline-start: 30px;
+  margin-block-end: clamp(0.7rem, 1vw + 0.5rem, 0.9rem);
+  padding-inline-start: clamp(1.75rem, 1vw, 1.8rem);
   position: relative;
 }
 .list--instructions li::before {
