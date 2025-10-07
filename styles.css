@@ -129,7 +129,7 @@ body {
 }
 .list li::before {
   content: ".";
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 2vw + 0.5rem, 2rem);
   position: absolute;
   inset-inline-start: 0;
   inset-block-start: -20px;
@@ -199,7 +199,7 @@ body {
 }
 .attribution {
   width: 62%;
-  max-width: 212px;
+  max-width: 13rem;
   margin: 0 auto;
   font-size: 0.9rem;
 }
