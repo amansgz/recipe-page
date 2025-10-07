@@ -156,8 +156,8 @@ body {
 }
 .list--instructions li {
   counter-increment: orderedList;
-  margin-block-end: clamp(0.7rem, 1vw + 0.5rem, 0.8rem);
-  padding-inline-start: 1.8rem;
+  margin-block-end: clamp(0.7rem, 1vw + 0.5rem, 0.9rem);
+  padding-inline-start: clamp(1.75rem, 1vw, 1.8rem);
   position: relative;
 }
 .list--instructions li::before {
