@@ -15,20 +15,21 @@
 
 <body>
 
-  <main class="recipe">
-    <section class="recipe__header">
-      <img class="recipe__image" src="./assets/images/image-omelette.jpeg"
-        alt="Golden vegetable omelette with pepper, folded and served on a white plate, filled with greens and cheese">
-      <div class="content">
-        <h1 class="recipe__title">Simple Omelette Recipe</h1>
-        <p class="recipe__description">An easy and quick dish, perfect for any meal. This classic omelette combines
-          beaten
-          eggs cooked
-          to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
-      </div>
-    </section>
+  <main>
+    <section class="recipe">
+      <header class="recipe__header">
+        <img class="recipe__image" src="./assets/images/image-omelette.jpeg"
+          alt="Golden vegetable omelette with pepper, folded and served on a white plate, filled with greens and cheese"
+          fetchpriority="high">
+        <div class="recipe__content">
+          <h1 class="recipe__title">Simple Omelette Recipe</h1>
+          <p class="recipe__description">An easy and quick dish, perfect for any meal. This classic omelette combines
+            beaten
+            eggs cooked
+            to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        </div>
+      </header>
 
-    <div class="recipe__details">
       <article class="prep-time">
         <h2 class="prep-time__title">Preparation time</h2>
         <ul class="list list--time">
@@ -48,6 +49,8 @@
           <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
         </ul>
       </section>
+
+      <hr class="divider">
 
       <section class="recipe__instructions">
         <h2 class="recipe__subtitle">Instructions</h2>
@@ -71,9 +74,12 @@
         </ol>
       </section>
 
+      <hr class="divider">
+
       <section class="recipe__nutrition">
         <h2 class="recipe__subtitle">Nutrition</h2>
-        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        <p class="recipe__description">The table below shows nutritional values per serving without the additional
+          fillings.</p>
 
         <table class="nutrition-table">
           <tr>
@@ -94,14 +100,14 @@
           </tr>
         </table>
       </section>
-    </div>
-
+    </section>
   </main>
 
   <footer class="footer">
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> -
-      Coded by <a href="https://www.github.com/amansgz">@amansgz</a>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer">Frontend Mentor</a>
+      Coded by <a href="https://www.github.com/amansgz" target="_blank" rel="noopener noreferrer">@amansgz</a>
     </div>
   </footer>
 
