@@ -25,12 +25,27 @@ Part of the [Learning Path](https://www.frontendmentor.io/learning-paths) on Fro
 
 - **HTML5**: Semantic markup for structure and accessiblity.
 - **CSS3**: Modern styling with Flexbox, and custom properties.
+- **BEM Methodology**: Naming convention for scalable CSS.
 
 ## 🔗 Live Preview
 
 [![Live Preview](https://img.shields.io/badge/Demo-Live-00BCD4?style=for-the-badge)](https://amansgz.github.io/recipe=page)
 
 ## 📚 What I Learned
+
+### Font Implementation with @font-face
+
+- **Multiple Font Families**: Implemented two distinct font families using `@font-face` rule
+- **Font Weight Managment**: Configured different font weights for each font family
+
+### Generic Utility Classes
+
+- **Sections Headings**: Created reusabled heading classes.
+- **Lists**: Removing default list styles to create custom list styles.
+
+### List Styling
+
+- **Custom List Indicators**: Created custom bullets and counter list using pseudo-elements(`::before`)
 
 ## 👩‍💻 Author
 
