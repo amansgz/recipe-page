@@ -38,14 +38,101 @@ Part of the [Learning Path](https://www.frontendmentor.io/learning-paths) on Fro
 - **Multiple Font Families**: Implemented two distinct font families using `@font-face` rule
 - **Font Weight Managment**: Configured different font weights for each font family
 
+```css
+/* fonts.css */
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/static/Outfit-Regular.ttf) format(truetype);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/static/Outfit-SemiBold.ttf) format(truetype);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+```
+
 ### Generic Utility Classes
 
 - **Sections Headings**: Created reusabled heading classes.
+
+```css
+/* Section Headings (Common styles) */
+.recipe__subtitle {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-heading-2);
+  font-weight: 400;
+  color: var(--clr-brown-800);
+  margin-block-end: var(--spacing-100);
+}
+```
+
 - **Lists**: Removing default list styles to create custom list styles.
+
+```css
+/* Common Lists */
+.list {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.list li {
+  position: relative;
+  padding-inline-start: var(--spacing-200);
+  margin-block-end: var(--spacing-50);
+  line-height: 1.5;
+}
+```
 
 ### List Styling
 
 - **Custom List Indicators**: Created custom bullets and counter list using pseudo-elements(`::before`)
+
+```css
+.list li::before {
+  content: ".";
+  font-size: 2rem;
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: -20px;
+}
+
+/* Rose Bullets List */
+.list--time li::before {
+  color: var(--clr-rose-800);
+}
+
+/* Brown Bullets List */
+.list--ingredients li::before {
+  color: var(--clr-brown-800);
+}
+```
+
+```css
+/* Ordered List */
+.list--instructions {
+  counter-reset: orderedList;
+}
+.list--instructions li {
+  counter-increment: orderedList;
+  margin-block-end: 10px;
+  padding-inline-start: 30px;
+  position: relative;
+}
+.list--instructions li::before {
+  content: counter(orderedList) ".";
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-brown-800);
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+}
+```
 
 ## 👩‍💻 Author
 
